@@ -222,7 +222,7 @@ static int HandleFDS(int num_sides, bool headered)
                     ptr += 16;
                     break;
                 case 4:
-                    if(datatype == 0)
+                    if(datatype == 0 || true)
                         DisAsm(base_address, &Buf[ptr+1], length, CODE);
                     else
                     {
